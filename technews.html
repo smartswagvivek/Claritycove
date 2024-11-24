@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClarityCove - Tech News</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 70px; /* Adjusted for navbar */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<nav class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 py-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold pl-10">ClarityCove</a>
+        <div>
+            <a href="index.html" class="mx-4 hover:underline">Home</a> <!-- Home Link -->
+            <a href="about.html" class="mx-4 hover:underline">About</a> <!-- About Link -->
+            <a href="contact.html" class="mx-4 hover:underline">Contact</a> <!-- Contact Link -->
+            <a href="technews.html" class="mx-4 hover:underline">Tech News</a> <!-- Tech News Link -->
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <header class="py-32 mt-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Latest in Tech</h1>
+            <p class="text-xl mb-8">Stay updated with the most recent technology trends, news, and innovations!</p>
+        </div>
+    </header>
+
+    <!-- Tech News Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 text-blue-600">Tech News Articles</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- News Article 1 -->
+                <div class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://www.eschoolnews.com/files/2024/12/k-12-tech-innovation-news.jpeg" alt="Tech News 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Tech Innovations in 2024</h3>
+                        <p class="text-gray-600 mb-4">Discover the most exciting technological advancements of 2024. From AI breakthroughs to new gadgets, it's all here.</p>
+                        <a href="https://technews.com/article1" class="text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://aihms.in/blog/wp-content/uploads/2020/05/ai1.jpg" alt="Tech News 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">The Rise of AI in Healthcare</h3>
+                        <p class="text-gray-600 mb-4">AI is transforming healthcare, from diagnostics to personalized treatments. Learn how AI is shaping the future of healthcare.</p>
+                        <a href="https://technews.com/article2" class="text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Article 3 -->
+                <div class="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://www.cyberbahnit.com/wp-content/uploads/2017/11/blockchain.jpg" alt="Tech News 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Blockchain Beyond Cryptocurrency</h3>
+                        <p class="text-gray-600 mb-4">Blockchain technology has many applications outside of cryptocurrency. Explore its uses in industries like healthcare, finance, and more.</p>
+                        <a href="https://technews.com/article3" class="text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-green-50 text-white text-center">
+    <div>
+        <p class="text-black mb-4">© 2024 ClarityCove. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- Mobile Navbar Toggle Script -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", function() {
+            const menu = document.querySelector("nav .md\\:hidden");
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
